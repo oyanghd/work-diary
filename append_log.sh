@@ -14,6 +14,7 @@ if [ -z "$SHELL_LOG_APPENDED" ]; then
 
 	cd "$script_dir"
 
+	git pull
 	git add .
 	git commit -m "hi($host_name.log): login in $host_name at $current_time" &
 	git push
